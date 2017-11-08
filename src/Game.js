@@ -116,6 +116,8 @@ export class Game extends Component{
                            className={difficulty=='easy'?'active':''}>Easy</a>
                         <a onClick={this.changeDifficulty.bind(this,18)}
                            className={difficulty=='hard'?'active':''}>Hard</a>
+                        <a onClick={this.restart}
+                           >Restart</a>
                        <Stopwatch ref={instance => { this.child = instance; }}/>
                     </div>
                     <div className='score'>
