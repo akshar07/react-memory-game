@@ -1,0 +1,197 @@
+html {
+  font: 10px Arial, Helvetic, sans-serif;
+  margin:0;
+  padding:0;
+}
+
+html {
+  background: #28f;
+  background: linear-gradient(to top, #cfdffc 0%, #ffffff 100%);
+  height: 100%;
+}
+
+#container > div {
+  margin: 1rem auto;
+  position: relative;
+  width: 120rem;
+}
+
+#container .endMsg {
+  color: #1774F3;
+  flex: 0 0 100%;
+  font-size: 4rem;
+  font-weight: bold;
+  height: 4rem;
+  margin: 1rem 0 0;
+  text-align: center;
+}
+
+#gameBoard {
+  background: #fff;
+  border: 1px solid #666;
+  border-radius: 1em;
+  margin: 4rem auto 0;
+  padding: 1rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 136rem;
+}
+.hard{
+    width: 136rem !important;
+}
+.easy{
+    width: 90rem !important;
+}
+.active{
+    color:orange
+}
+.difficulty a {
+font-size: 14px;
+margin-right:10px;
+cursor: pointer;
+}
+.difficulty{
+    margin-top:20px;
+    padding-bottom: 40px;
+}
+.difficulty label{
+    margin-right: 10px;
+    font-size: 14px;
+}
+.score {
+    background: #28f;
+    border: 5px solid #fff;
+    border-radius: 55px;
+    color: #fff;
+    font-weight: bold;
+    width: 6rem;
+    position: fixed;
+    text-align: center;
+    z-index: 10;
+    left: 35px;
+    top: 28%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    /* transform: translate(-50%); */
+}
+
+.score span {
+  font-size: 5.5em;
+}
+
+.flip {
+  border: 1px solid #666;
+  border-radius: 0.5px;
+  margin: 1rem;
+  width: 20rem;
+  height: 25rem;
+  perspective: 800;
+  -webkit-perspective: 800;
+  position: relative;
+  box-shadow: 2px 2px 2px 1px #666;
+}
+
+.flip .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.flip .card.flipped {
+  -webkit-transform: rotatex(-180deg);
+  transform: rotatex(-180deg);
+}
+
+.flip .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position-y: 2em;
+    background-repeat: no-repeat;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-size: contain;
+}
+.fourGrid{
+    width:90rem !important;
+}
+.flip .card .front {
+  -webkit-transform: rotatex(-180deg);
+  position: absolute;
+  z-index: 1;
+}
+
+
+.flip .card .back {
+  cursor: pointer;
+  background-image: url('https://n6-img-fp.akamaized.net/free-icon/white-question-mark-on-a-black-circular-background_318-35996.jpg?size=338&ext=jpg');
+}
+
+/*  Putting the card fronts above the card back will hide the front of the card until class is removed */
+.flip .got {
+  background-image: url(https://qph.ec.quoracdn.net/main-qimg-6f7ae61a0ce353f7e9447c14cf487b05-c);
+}
+
+.flip .suits {
+  background-image: url(https://i.pinimg.com/originals/31/ef/67/31ef67174c22b5db1f672036a257203e.jpg);
+}
+
+.flip .hoc {
+  background-image: url(https://designcontest-com-designcontest.netdna-ssl.com/blog/wp-content/uploads/2015/08/House-of-Cards-TV-Show-Poster-2.jpeg);
+}
+
+.flip .stranger {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/71vJ3kPE67L._SY550_.jpg);
+}
+
+.flip .lost {
+  background-image: url(https://i.pinimg.com/originals/29/3c/2c/293c2c5483cca52ea503ed17fe3e87a9.jpg);
+}
+
+.flip .daredevil {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/91GZUkNIYPL._SY550_.jpg);
+}
+
+.flip .house {
+  background-image: url(https://cdn.shopify.com/s/files/1/0419/8093/products/1403097710_main_large.jpeg?v=1451074502);
+}
+
+.flip .ww {
+  background-image: url(https://i0.wp.com/media2.slashfilm.com/slashfilm/wp/wp-content/images/Westworld-poster.jpg);
+}
+.flip .avatar {
+    background-image: url(http://images4.fanpop.com/image/photos/15100000/the-japanese-styled-poster-the-last-airbender-15184273-600-784.jpg);
+  }
+  .flip .thatshow {
+    background-image: url(  https://www.iceposter.com/thumbs/MOV_96051287_b.jpg);
+  }
+  .flip .sg {
+    background-image: url(https://tvseriesfinale.com/wp-content/uploads/2016/08/Supergirl-TV-series-on-The-CW-season-two-key-art-canceled-or-renewed-e1472497949337.jpg);
+  }
+  .flip .dexter {
+    background-image: url(https://ae01.alicdn.com/kf/HTB1JPfWOVXXXXbvXVXXq6xXFXXXC/S0104-Dexter-6-TV-series-Posters-Art-Home-Decor-Cloth-Print-more-size-wall-sticker-Home.jpg_640x640.jpg);
+  }
+  .flip .sherlock {
+    background-image: url(https://www.movieposter.com/posters/archive/main/157/MPW-78722);
+  }
+  .flip .bones {
+    background-image: url(http://sdccblog.com/wp-content/uploads/2013/07/970240_10151562823487993_1508578451_n.jpg);
+  }
+  .flip .narcos {
+    background-image: url(https://ae01.alicdn.com/kf/HTB1DSwSNXXXXXaHXFXXq6xXFXXXY/Major-Carrillo-Columbia-Season-Narcos-font-b-TV-b-font-font-b-series-b-font-Vintage.jpg);
+  }
+  .flip .flash {
+    background-image: url(https://i.pinimg.com/736x/c8/d4/10/c8d410f7044127a710f7b96f174f8024--the-flash-posters.jpg);
+  }
+  .flip .gotham {
+    background-image: url(http://www.moviexplorers.com/wp-content/uploads/2014/06/Gotham-Key-Art-Bruce-Wayne.jpg);
+  }
+  .flip .spartacus {
+    background-image: url(https://pre00.deviantart.net/82fe/th/pre/i/2013/191/5/f/spartacus_series_tv_poster_by_marrakchi-d5jrenl.jpg);
+  }
